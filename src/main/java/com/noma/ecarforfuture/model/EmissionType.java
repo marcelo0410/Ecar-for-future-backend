@@ -30,6 +30,7 @@ public class EmissionType {
     @TableField("transport")
     private Double transport;
 
+    // fugitive_emissions
     @ApiModelProperty(value = "fugitive_emissions")
     @TableField("fugitive_emissions")
     private Double fugitiveEmissions;
