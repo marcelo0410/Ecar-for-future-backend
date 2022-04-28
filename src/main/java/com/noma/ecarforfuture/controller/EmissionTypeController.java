@@ -1,7 +1,8 @@
 package com.noma.ecarforfuture.controller;
 
 import com.noma.ecarforfuture.model.ECar;
-import com.noma.ecarforfuture.service.ECarService;
+import com.noma.ecarforfuture.model.EmissionType;
+import com.noma.ecarforfuture.service.EmissionTypeService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -13,16 +14,16 @@ import java.util.List;
 
 @CrossOrigin(origins = {"http://localhost:3000", "https://frontend-iter2.dhf1bimc2e9gn.amplifyapp.com/", "http://www.recyclenowinvictoria.ml"})
 @RestController
-@RequestMapping("/v1/api/ecar")
-public class ECarController {
-
+@RequestMapping("/v1/api/emission")
+public class EmissionTypeController {
     @Autowired
-    private ECarService eCarService;
+    private EmissionTypeService emissionTypeService;
 
     @GetMapping("findAll")
     @ApiOperation(value = "Get all the Ecars information")
-    public List<ECar> findAllEcar(){
-        List<ECar> list = eCarService.list();
+    public List<EmissionType> findAllEmissionType(){
+        List<EmissionType> list = emissionTypeService.list();
         return list;
     }
+
 }

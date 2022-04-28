@@ -14,10 +14,6 @@ public class EmissionType {
     @TableField("year")
     private Integer year;
 
-    @ApiModelProperty(value = "quarter")
-    @TableField("quarter")
-    private Integer quarter;
-
     @ApiModelProperty(value = "electricity")
     @TableField("electricity")
     private Double electricity;
@@ -30,8 +26,27 @@ public class EmissionType {
     @TableField("transport")
     private Double transport;
 
-    // fugitive_emissions
     @ApiModelProperty(value = "fugitive_emissions")
     @TableField("fugitive_emissions")
     private Double fugitiveEmissions;
+
+    @ApiModelProperty(value = "industrial_processes_and_product_use")
+    @TableField("industrial_processes_and_product_use")
+    private Double industrialProcessesAndProductUse;
+
+    @ApiModelProperty(value = "agriculture")
+    @TableField("agriculture")
+    private Double agriculture;
+
+    @ApiModelProperty(value = "waste")
+    @TableField("waste")
+    private Double waste;
+
+    @ApiModelProperty(value = "LULUCF")
+    @TableField("LULUCF")
+    private Double lulucf;
+
+    @ApiModelProperty(value = "total")
+    @TableField("total")
+    private Double total;
 }
