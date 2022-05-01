@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@CrossOrigin(origins = {"http://localhost:3000", "https://frontend-iter2.dhf1bimc2e9gn.amplifyapp.com", "http://www.recyclenowinvictoria.ml"})
+//@CrossOrigin(origins = {"http://localhost:3000", "https://frontend-iter2.dhf1bimc2e9gn.amplifyapp.com", "http://www.recyclenowinvictoria.ml"})
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/v1/api/emission")
 public class EmissionTypeController {
