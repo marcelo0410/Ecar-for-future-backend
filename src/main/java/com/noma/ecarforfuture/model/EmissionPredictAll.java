@@ -16,5 +16,13 @@ public class EmissionPredictAll {
 
     @ApiModelProperty(value = "emission")
     @TableField("emission")
-    private Long emission;
+    private Integer emission;
+
+    @ApiModelProperty(value = "emissionFifty")
+    @TableField("emission_fifty")
+    private Integer emissionFifty;
+
+    @ApiModelProperty(value = "difference")
+    @TableField("difference")
+    private Integer difference;
 }
