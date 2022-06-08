@@ -16,5 +16,5 @@ public class EmissionAll {
 
     @ApiModelProperty(value = "emission")
     @TableField("emission")
-    private Long emission;
+    private Float emission;
 }
